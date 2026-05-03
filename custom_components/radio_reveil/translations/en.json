@@ -1,0 +1,30 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Set up Radio Alarm",
+        "description": "Choose your speaker and the default radio station.",
+        "data": {
+          "media_player": "Google Home / Chromecast",
+          "radio_url": "Radio station",
+          "volume": "Volume (0.0 → 1.0)"
+        }
+      }
+    },
+    "abort": {
+      "already_configured": "Radio Alarm is already configured."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Update Radio Alarm",
+        "data": {
+          "media_player": "Google Home / Chromecast",
+          "radio_url": "Radio station",
+          "volume": "Volume (0.0 → 1.0)"
+        }
+      }
+    }
+  }
+}

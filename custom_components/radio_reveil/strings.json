@@ -1,0 +1,30 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Configurer Radio Réveil",
+        "description": "Choisissez votre enceinte et la station radio par défaut.",
+        "data": {
+          "media_player": "Google Home / Chromecast",
+          "radio_url": "Station radio",
+          "volume": "Volume (0.0 → 1.0)"
+        }
+      }
+    },
+    "abort": {
+      "already_configured": "Radio Réveil est déjà configuré."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Modifier Radio Réveil",
+        "data": {
+          "media_player": "Google Home / Chromecast",
+          "radio_url": "Station radio",
+          "volume": "Volume (0.0 → 1.0)"
+        }
+      }
+    }
+  }
+}
