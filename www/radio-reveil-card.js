@@ -97,6 +97,7 @@ class RadioReveilCard extends HTMLElement {
     }).join("");
 
     content.innerHTML = `
+      <!-- 1. Global -->
       <div class="row">
         <ha-icon icon="mdi:alarm" style="color:var(--primary-color)"></ha-icon>
         <div class="label">Réveil actif
@@ -107,6 +108,13 @@ class RadioReveilCard extends HTMLElement {
           data-state="${globalState?.state || "off"}">
         </ha-switch>
       </div>
+
+      <!-- 2. Jours -->
+      <div class="section-label">Programmation</div>
+      <div class="days-grid">${dayTiles}</div>
+
+      <!-- 3. Radio -->
+      <div class="section-label">Station & diffusion</div>
       <div class="row">
         <ha-icon icon="mdi:radio" style="color:var(--primary-color)"></ha-icon>
         <div class="label">Station
@@ -114,6 +122,8 @@ class RadioReveilCard extends HTMLElement {
         </div>
         <span style="font-size:13px;color:var(--secondary-text-color)">${radioState?.state || "—"}</span>
       </div>
+
+      <!-- 4. Volume -->
       <div class="row">
         <ha-icon icon="mdi:volume-high" style="color:var(--primary-color)"></ha-icon>
         <div class="label">Volume
@@ -121,16 +131,15 @@ class RadioReveilCard extends HTMLElement {
         </div>
         <span style="font-size:13px;color:var(--secondary-text-color)">${volState ? Math.round(parseFloat(volState.state)*100)+"%" : "—"}</span>
       </div>
+
+      <!-- 5. Media player -->
       <div class="row">
         <ha-icon icon="mdi:google-home" style="color:var(--primary-color)"></ha-icon>
         <div class="label">Diffusion
           <small>${mpState?.entity_id || ""}</small>
         </div>
         <span style="font-size:12px;color:var(--secondary-text-color);font-family:monospace">${mpState?.state || "—"}</span>
-      </div>
-
-      <div class="section-label">Programmation</div>
-      <div class="days-grid">${dayTiles}</div>`;
+      </div>`;
 
     // Bind global toggle
     const sw = content.querySelector("ha-switch");
