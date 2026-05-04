@@ -4,6 +4,7 @@ DOMAIN = "radio_reveil"
 VERSION = "1.0.0"
 
 # Config entry keys
+CONF_NAME = "name"
 CONF_MEDIA_PLAYER = "media_player"
 CONF_VOLUME = "volume"
 CONF_RADIO_URL = "radio_url"
