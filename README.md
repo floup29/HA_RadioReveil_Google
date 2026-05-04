@@ -1,5 +1,10 @@
 # 📻 Radio Réveil pour Home Assistant
 
+
+<p align="center">
+  <img src="icon.png" alt="Radio Réveil" width="120">
+</p>
+
 [![HACS](https://img.shields.io/badge/HACS-Custom-orange.svg)](https://hacs.xyz)
 [![HA Version](https://img.shields.io/badge/HA-2023.6%2B-blue.svg)](https://www.home-assistant.io)
 
