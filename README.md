@@ -32,7 +32,7 @@ Configurez chaque jour indépendamment — horaire, activation, station radio et
 
 1. Ouvrez HACS dans Home Assistant
 2. **Intégrations → ⋮ → Dépôts personnalisés**
-3. URL : `https://github.com/votre-repo/radio-reveil` — Catégorie : **Intégration**
+3. URL : `https://github.com/floup29/HA_RadioReveil_Google` — Catégorie : **Intégration**
 4. Recherchez **Radio Réveil** → **Télécharger**
 5. Redémarrez Home Assistant
 
