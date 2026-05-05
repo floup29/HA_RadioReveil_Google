@@ -4,11 +4,16 @@
   "version": "1.0.0",
   "documentation": "https://github.com/votre-repo/radio-reveil",
   "issue_tracker": "https://github.com/votre-repo/radio-reveil/issues",
-  "codeowners": ["@votre-github"],
+  "codeowners": [
+    "@votre-github"
+  ],
   "requirements": [],
   "dependencies": [],
-  "after_dependencies": ["media_player"],
+  "after_dependencies": [
+    "media_player"
+  ],
   "config_flow": true,
   "iot_class": "local_push",
-  "integration_type": "hub"
+  "integration_type": "hub",
+  "icon": "mdi:alarm"
 }
