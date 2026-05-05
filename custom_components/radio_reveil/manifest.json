@@ -2,10 +2,10 @@
   "domain": "radio_reveil",
   "name": "Radio Réveil",
   "version": "1.0.0",
-  "documentation": "https://github.com/votre-repo/radio-reveil",
-  "issue_tracker": "https://github.com/votre-repo/radio-reveil/issues",
+  "documentation": "https://github.com/floup29/HA_RadioReveil_Google",
+  "issue_tracker": "https://github.com/floup29/HA_RadioReveil_Google/issues",
   "codeowners": [
-    "@votre-github"
+    "HA_RadioReveil_Google"
   ],
   "requirements": [],
   "dependencies": [],
