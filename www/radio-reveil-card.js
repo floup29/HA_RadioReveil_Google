@@ -145,7 +145,7 @@ class RadioReveilCard extends HTMLElement {
     let html = `
       <div class="card-header">
         <div class="card-title">
-          <ha-icon icon="mdi:alarm"></ha-icon>Radio Réveil
+          <img src="/local/radio_reveil/icon.png" style="width:28px;height:28px;border-radius:6px;margin-right:4px;vertical-align:middle" onerror="this.style.display='none'">Radio Réveil
         </div>
         <span style="font-size:12px;color:var(--secondary-text-color)">
           ${alarms.length} réveil${alarms.length > 1 ? "s" : ""}
@@ -191,7 +191,7 @@ class RadioReveilCard extends HTMLElement {
 
             <!-- 1 · Global toggle -->
             <div class="alarm-header">
-              <ha-icon icon="mdi:alarm" style="color:var(--primary-color)"></ha-icon>
+              <img src="/local/radio_reveil/icon.png" style="width:24px;height:24px;border-radius:4px" onerror="this.style.display='none'">
               <span class="alarm-name ${globalOn ? "" : "off"}">${a.name}</span>
               <ha-switch
                 ${globalOn ? "checked" : ""}
